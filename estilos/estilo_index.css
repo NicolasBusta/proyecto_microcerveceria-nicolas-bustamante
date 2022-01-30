@@ -22,6 +22,19 @@ body{
         border-style: solid;
         color: wheat;
     }
+    .logoInicio{
+        animation-name: logoInicio ;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+    }
+    @keyframes logoInicio {
+    from {
+        transform:translate(-200px);
+    }
+    to {
+        transform: translate(0);}
+    }
+    
     .menu{
         display: flex;
         flex-flow: row nowrap;
@@ -30,12 +43,25 @@ body{
         padding-top: 15px;
         margin-bottom: 18px;
     }
+    .menu{
+        animation-name: menu;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+    }
+    @keyframes menu {
+        from {
+            transform:translate(-200px);
+        }
+        to {
+            transform: translate(0);}
+        }
     .itemsMenu{
+        padding: 5px;
         font-size: 20px;
         margin-bottom: 20px;
         margin-right: 18px;
         background-color: rgb(143, 118, 82, 0.5);
-        
+        border-radius: 0px;
     }
     .itemsMenu a{
         text-decoration: none;
@@ -52,12 +78,28 @@ body{
 
     .banner img{
         width: 100%;
-        height: 500px;
+        height: 300px;
         margin-bottom: 5px;
         border-radius: 10px;
+        border-width:2px;
         border-style: solid;
         color: wheat;
     }
+    .banner img{
+        animation-name: banner;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+    }
+    @keyframes banner{
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        
+    }
+    
     /* fin contenido inicio general */
 
     /*contenido de index mobile*/
@@ -82,17 +124,56 @@ justify-items: center;
     border-style: solid;
     color: black;
 }
+.tituloQuienesosmos{
+    animation-name: tituloQuienesosmos;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+@keyframes tituloQuienesosmos {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
+
 .parrafoQuienesosmos {
     grid-area: parrafo;
     font-size: 25px;
     text-align: center;
 }
+.parrafoQuienesosmos{
+    animation-name: parrafoQuienesosmos;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+@keyframes parrafoQuienesosmos {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
 .imgBarriles{
     grid-area: barriles;
     border-radius: 10px;
     border-style: solid;
     color: wheat;
 }
+.imgBarriles{
+    animation-name: imagenBarriles;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+}
+@keyframes imagenBarriles {
+    from {
+        transform:translate(-200px);
+    }
+    to {
+        transform: translate(0);}
+    }
 .imgFabrica{
     margin-top: 5px;
     grid-area: fabrica;
@@ -100,6 +181,18 @@ justify-items: center;
     border-style: solid;
     color: wheat;
 }
+.imgFabrica{
+    animation-name: imagenFabrica;
+    animation-iteration-count:1;
+    animation-duration: 4s;
+}
+@keyframes imagenFabrica {
+    from {
+        transform:translate(-400px);
+    }
+    to {
+        transform: translate(0);}
+    }
 .grid img{
     width: 450px;
 }
@@ -120,6 +213,19 @@ justify-items: center;
         width:100px;
         margin-left: 10px;
     }
+    .RD{
+        animation-name: RD;
+        animation-iteration-count:infinite;
+        animation-duration: 5s;
+    }
+    @keyframes RD {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
     .footer h2{
         color: blanchedalmond;
         font-size: 20px;
@@ -159,6 +265,19 @@ justify-items: center;
     color: black;
     margin-bottom: 15px;
 }
+.sobreNosotros {
+    animation-name: sobreNosotros;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes sobreNosotros {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
 .sobreNosotros img{
     width: 80%;
     height: 350px;
@@ -175,9 +294,20 @@ justify-items: center;
 .trabajadores{
     display: flex;
     flex-flow:column;
-    width: 100%;
-    
+    width: 100%; 
 }
+.trabajadores{
+    animation-name: trabajadores;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+}
+@keyframes trabajadores {
+    from {
+        transform:translate(-100px);
+    }
+    to {
+        transform: translate(0);}
+    }
 .trabajador{
     width: 100%;
     margin-bottom: 15px;
@@ -190,6 +320,18 @@ justify-items: center;
     font-size: 20px;
     text-align: center;
 }
+.parrafoNosotros{
+    animation-name:parrafoNosotros;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+}
+@keyframes parrafoNosotros {
+    from {
+        transform:translate(-100px);
+    }
+    to {
+        transform: translate(0);}
+    }
 /* fin estilos de la paguina nosotros*/
 
 /* estilos paguina cervezas mobile*/
@@ -207,12 +349,37 @@ justify-items: center;
     border-style: solid;
     color: black;
 }
+.cervezas h2 {
+    animation-name: tituloCervezas;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes tituloCervezas {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
 .cervezas img{
     width: 80%;
     border-radius: 10px;
     border-style: solid;
     color: wheat;
 }
+.cervezas img{
+    animation-name:cervezasImg;
+    animation-iteration-count:1;
+    animation-duration: 2s;
+}
+@keyframes cervezasImg {
+    from {
+        transform:translate(-500px);
+    }
+    to {
+        transform: translate(0);}
+    }
 .gridCervezas{
     display: grid;
     grid-template-areas: "tipo1"
@@ -244,6 +411,19 @@ justify-items: center;
                     align-items: center;
                    
 }
+.gridCervezas img {
+    animation-name: imagenesBirras;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes imagenesBirras {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
 /*titulogrid*/
 .tituloRubias{
     grid-area: tipo1;
@@ -258,6 +438,30 @@ justify-items: center;
     grid-area: tipo3;
     padding-top: 50px;
 }
+.gridCervezas h2{
+    animation-name:tituloEstilo;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+}
+@keyframes tituloEstilo {
+    from {
+        transform:translate(-100px);
+    }
+    to {
+        transform: translate(0);}
+    }
+.gridCervezas h3{
+    animation-name:tituloBirras;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+}
+@keyframes tituloBirras {
+    from {
+    transform:translate(-100px);
+    }
+    to {
+     transform: translate(0);}
+     }
 /*tipos de cerveza 1 fila*/
 .nombreGolden{
     grid-area: nombre1;
@@ -343,11 +547,15 @@ grid-area: cerve7;
     align-items: center;
     margin-top: 20px;
     height: 50px;
-
     background-color: rgb(143, 118, 82, 0.5);
     border-radius: 10px;
     border-style: solid;
     color: wheat;
+    transition: heigth 1s, content 1s;
+}
+.pedirAhora:hover{
+    height: 100%;
+    content: 1000px;
 }
 .pedirAhora a{
     font-size:40px;
@@ -356,8 +564,23 @@ grid-area: cerve7;
 }
 .pedirAhora a:hover{
     text-decoration: underline;
-    color: yellow; 
+    color: yellow;
 }
+.pedirAhora{
+    animation-name: pedirAhora;
+    animation-iteration-count:infinite;
+    animation-duration: 8s;
+}
+@keyframes pedirAhora {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    
+    }
+    }
+
 /* FIN estilos paguina cervezas mobile*/
 
 /* estilos paguina bares mobile*/
@@ -370,6 +593,19 @@ grid-area: cerve7;
     color: black;
     margin-bottom: 15px;
 }
+.imagenBar h2 {
+    animation-name: nuestrosBares;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes nuestrosBares {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
 .imagenBar{
     display:flex;
     flex-flow:column;
@@ -382,11 +618,37 @@ grid-area: cerve7;
     border-style: solid;
     color: wheat;
 }
+.imagenBar img {
+    animation-name: inicioBar;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes inicioBar {
+    from {
+        transform: translate(-100px);
+    }
+    to {
+        transform: translate(0);
+    }
+    }
 .contenedorBares{
     display: flex;
     flex-flow:column;
     width: 100%;
 }
+.contenedorBares {
+    animation-name: bares;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes bares {
+    from {
+        transform: translate(-100px);
+    }
+    to {
+        transform: translate(0);
+    }
+    }
 .nuestroBar h2{
     font-size: 30px;
     text-align: center;
@@ -421,12 +683,38 @@ margin-bottom: 15px;
     color: black;
     margin-bottom: 15px;
 }
+.consulta h2 {
+    animation-name: tituloConsulta;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+@keyframes tituloConsulta {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+    }
 .consulta img{
     width: 100%;
     border-radius: 10px;
     border-style: solid;
     color: wheat;
 }
+.consulta img {
+    animation-name: consultaImg;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes consultaImg {
+    from {
+        transform: scale(3);
+    }
+    to {
+        transform: scale(1);
+    }
+    }
 .formulario{
     display: flex;
     flex-flow: column;
@@ -434,15 +722,73 @@ margin-bottom: 15px;
     align-items:center;
     margin-bottom: 15px;
 }
+.formulario {
+    animation-name: formulario;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes formulario {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+    }
+
 /* fin estilos paguina contactos mobile*/
 
 
 /*DESKTOP*/
+
 @media(min-width: 1024px){
 
     /* inicio contenido desktop */
+    .logoInicio{
+    transition: padding 1s;
+    }
+    .logoInicio:hover{
+    padding:5px;
+    background-color:rgb( 237, 187, 153, 0.2);
+    }
     .menu{
         justify-content:flex-end;
+    }
+    .menu{
+        animation-name: menu;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+    }
+    @keyframes menu {
+        from {
+            transform:translate(100px);
+        }
+        to {
+            transform: translate(0);
+        }
+        }
+    .itemsMenu{
+        width: 500px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .itemsMenu{
+        transition: padding 1s;
+        }
+        .itemsMenu:hover{
+        padding:10px;
+        border-radius: 20px; 
+        }
+        
+    .itemsMenu:hover{
+        padding:20px;
+        border-radius: 80px 20px;
+        }
+    .banner img{
+    width: 99%;
+    margin-right: 5px;
+    height: 600px;
+    margin-left: 2px;
     }
 
     .grid {
@@ -477,12 +823,36 @@ margin-bottom: 15px;
         border-style: solid;
         color: wheat;
     }
+    .imgBarriles{
+        animation-name: imagenBarriles;
+        animation-iteration-count:1;
+        animation-duration: 3s;
+    }
+    @keyframes imagenBarriles {
+        from {
+            transform:translate(-200px);
+        }
+        to {
+            transform: translate(0);}
+        }
     .imgFabrica{
         grid-area: fabrica;
         border-radius: 10px;
         border-style: solid;
         color: wheat;
     }
+    .imgFabrica{
+        animation-name: imagenFabrica;
+        animation-iteration-count:1;
+        animation-duration: 3s;
+    }
+    @keyframes imagenFabrica {
+        from {
+            transform:translate(100px);
+        }
+        to {
+            transform: translate(0);}
+        }
     /* Fin contenido inicio desktop*/
 
     /*FOOTER desptok*/
@@ -501,6 +871,14 @@ margin-bottom: 15px;
         border-style: solid;
         color: wheat;
     } 
+    .logoPie{
+        transition: padding 1s;
+        }
+    .logoPie:hover{
+        padding:5px;
+        background-color:rgb( 237, 187, 153, 0.2);
+        }
+    
     /* FIN FOOTER desptok*/
 
     /* estilos de la paguina nosotros desptok*/
@@ -535,19 +913,81 @@ margin-bottom: 15px;
                         align-items: center;
                        
     }
-
+/*transition*/
+.cervezaGolden{
+    transition: width 1s;
+    }
+.cervezaGolden:hover{
+    width: 90%;
+    }
+.cervezaBlond{
+    transition: width 1s;
+    }
+.cervezaBlond:hover{
+    width: 90%;
+    } 
+.cervezaPilsner{
+    transition: width 1s;
+    }
+.cervezaPilsner:hover{
+    width: 90%;
+    }
+.cervezaAmber{
+    transition: width 1s;
+    }
+.cervezaAmber:hover{
+    width: 90%;
+    }
+.cervezaEnglishBrown{
+    transition: width 1s;
+    }
+.cervezaEnglishBrown:hover{
+    width: 90%;
+     }
+.cervezaScotch{
+    transition: width 1s;
+     }
+.cervezaScotch:hover{
+    width: 90%;
+    }
+.cervezaStout{
+    transition: width 1s;
+    }
+.cervezaStout:hover{
+    width: 90%;
+    }
+.cervezaPorter{
+    transition: width 1s;
+    }
+.cervezaPorter:hover{
+    width: 90%;
+    }
+.cervezaBock{
+    transition: width 1s;
+    }
+ .cervezaBock:hover{
+    width: 90%;
+        }
+/* fin transition*/
     .pedirAhora{
         display: flex;
         flex-flow: row nowrap;
         margin-top: 20px;
-        width: 25%;
-        height: 100px;
-        margin-left: 40%;
+        width: 500px;
+        height: 50px;
+        margin-left: 30%;
         background-color: rgb(143, 118, 82, 0.5);
         border-radius: 10px;
         border-style: solid;
         color: wheat;
+        justify-content: center;
+        transition: padding 1s;
     }
+    .pedirAhora:hover{
+        justify-content: center;
+        padding: 20px;
+        background-color:rgb( 246, 72, 41, 0.3);
+        }
     /* fin estilos paguina cervezas desptok*/
 
     /* estilos paguina bares desptok*/
@@ -555,6 +995,19 @@ margin-bottom: 15px;
         width: 90%;
         height: 600px; 
     }
+    .imagenBar img {
+        animation-name: inicioBar;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+    @keyframes inicioBar {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+        }
     .nuestroBar{
         text-align: center;
     }
@@ -578,11 +1031,22 @@ margin-bottom: 15px;
     align-items:flex-start;
     margin-left: 15px;
     margin-bottom: 15px;
-    
     }
+    .formulario {
+        animation-name: formulario;
+        animation-iteration-count: 1;
+        animation-duration: 5s;
+    }
+    @keyframes formulario {
+        from {
+            transform: translate(800px)
+        }
+        to {
+            transform: translate(0);
+        }
+        }
     /*fin estilos paguina contactos desptok*/
 }
-
 /*FIN DE MEDIAQUIERIS*/
 
 
