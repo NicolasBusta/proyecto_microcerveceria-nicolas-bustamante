@@ -198,11 +198,13 @@ justify-items: center;
 }
     /*fin de contenido index mobile*/
 
-    /*FOOTER general */
+    /*FOOTER Mobile */
+    
     .footer{
+        width: 100%;
         display: flex;
-        flex-flow: column;
-        justify-content: center;
+        flex-flow: column nowrap;
+        justify-content:center;
         margin-left: 15px;
         
     }
@@ -226,23 +228,24 @@ justify-items: center;
             transform:scale(1);
         }
         }
-    .footer h2{
+    .footer1 h2{
         color: blanchedalmond;
-        font-size: 20px;
+        font-size: 30px;
     }
-    .footer li{
+    .footer1 li{
         font-size: 20px;
+        color: black;
     }
-    
+
     .logoPie{
-        float:none;
-        width: 250px;
-        margin-top: 20px;
+
+        margin-top: 5px;
         border-radius: 10px;
         border-style: solid;
         color: wheat;
     } 
     .derechos{
+        padding-bottom: 1px;
         width: 100%;
         color: blanchedalmond;
         text-align: center;
@@ -631,10 +634,21 @@ grid-area: cerve7;
         transform: translate(0);
     }
     }
-.contenedorBares{
-    display: flex;
-    flex-flow:column;
+.contenedorBares h2{
     width: 100%;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(143, 118, 82, 0.5);
+    border-radius: 5px;
+    border-style: solid;
+    color: black;
+    margin-top: 15px; 
+    margin-right: 15px;
+}
+
+.contenedorBares p{
+    font-size: 20px;
+    color: black;
 }
 .contenedorBares {
     animation-name: bares;
@@ -649,22 +663,21 @@ grid-area: cerve7;
         transform: translate(0);
     }
     }
-.nuestroBar h2{
-    font-size: 30px;
-    text-align: center;
-    background-color: rgb(143, 118, 82, 0.5);
-    border-radius: 5px;
-    border-style: solid;
-    color: black;
-    margin-top: 15px; 
-    margin-right: 15px;
-}
-.nuestroBar{
-    text-align: left;
-}
-.nuestroBar p{
-    font-size: 25px;
-}
+
+.imagenBar img {
+    animation-name: inicioBar;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    }
+@keyframes inicioBar {
+    from {
+        transform: translate(-100px);
+        }
+        to {
+        transform: translate(0);
+    }
+    }
+
 /*FIN de estilos paguina bares mobile*/
 
 /* estilos paguina contactos mobile*/
@@ -688,6 +701,7 @@ margin-bottom: 15px;
     animation-iteration-count: 1;
     animation-duration: 4s;
 }
+
 @keyframes tituloConsulta {
     from {
         transform:scale(0);
@@ -696,45 +710,42 @@ margin-bottom: 15px;
         transform:scale(1);
     }
     }
-.consulta img{
-    width: 100%;
-    border-radius: 10px;
-    border-style: solid;
-    color: wheat;
+
+    .imagenContactos {
+        animation-name: consultaImg;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+    @keyframes consultaImg {
+        from {
+            transform: scale(3);
+        }
+        to {
+            transform: scale(1);
+        }
+        }
+
+    .form-label{
+        font-size: 25px;
+        color: black;
+        }
+    .formulario {
+            animation-name: formulario;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+        }
+        @keyframes formulario {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+            
 }
-.consulta img {
-    animation-name: consultaImg;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes consultaImg {
-    from {
-        transform: scale(3);
-    }
-    to {
-        transform: scale(1);
-    }
-    }
-.formulario{
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    align-items:center;
-    margin-bottom: 15px;
-}
-.formulario {
-    animation-name: formulario;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes formulario {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-    }
+ .btn{
+     background-color: black;
+ }       
 
 /* fin estilos paguina contactos mobile*/
 
@@ -742,6 +753,31 @@ margin-bottom: 15px;
 /*DESKTOP*/
 
 @media(min-width: 1024px){
+
+/*footer desktop*/
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        width: 80%;
+        display: flex;
+        flex-flow: row;
+        padding-top:15px;
+    }
+.itemsFooter h {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; 
+}
+.logoPie{
+    float: left;
+    margin-left: 15px;
+}
+.RD{
+    width: 60px;
+}
+
+/*Fin footer desktop*/
 
     /* inicio contenido desktop */
     .logoInicio{
@@ -802,7 +838,9 @@ margin-bottom: 15px;
                          grid-row-gap: 15px;
     justify-items: center;                  
     }
-    
+    .grid{
+        margin-bottom: 200px;
+    }
     .tituloQuienesosmos{
         grid-area: titulo;
         text-align: center;
@@ -991,60 +1029,25 @@ margin-bottom: 15px;
     /* fin estilos paguina cervezas desptok*/
 
     /* estilos paguina bares desptok*/
-    .imagenBar img{
-        width: 90%;
-        height: 600px; 
-    }
-    .imagenBar img {
-        animation-name: inicioBar;
-        animation-iteration-count: 1;
-        animation-duration: 2s;
-    }
-    @keyframes inicioBar {
-        from {
-            transform: scale(0);
-        }
-        to {
-            transform: scale(1);
-        }
-        }
-    .nuestroBar{
-        text-align: center;
+
+    .barSalta{
+        width:370px;
+        height: 230px;
     }
 
-    .contenedorBares{
-        display: flex;
-        flex-flow:row nowrap;
-        width: 100%;
-    }
+    
     /* fin estilos paguina bares desptok*/
 
     /* estilos paguina contactos desptok*/
-    
-    .consulta img{
-        width: 60%;
+    .formulario{
+        width: 50%;
+        margin-top: 15px;
         border-radius: 10px;
         border-style: solid;
         color: wheat;
     }
-    .formulario{
-    align-items:flex-start;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    }
-    .formulario {
-        animation-name: formulario;
-        animation-iteration-count: 1;
-        animation-duration: 5s;
-    }
-    @keyframes formulario {
-        from {
-            transform: translate(800px)
-        }
-        to {
-            transform: translate(0);
-        }
-        }
+
+
     /*fin estilos paguina contactos desptok*/
 }
 /*FIN DE MEDIAQUIERIS*/
