@@ -1,0 +1,208 @@
+@import "../partials/colores";
+@import "../partials/tipografia";
+
+// banner del index
+/*Contenido index mobile*/
+
+section{
+    .banner{
+        img{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border-width:2px;
+            border-style: solid;
+            color:$madera; 
+            animation-name: banner;
+            animation-iteration-count:1;
+            animation-duration: 1s;
+        }
+    }
+    @keyframes banner{
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+    }
+}
+
+// Fin banner del index
+
+//contenido index
+
+.grid{
+        display: grid;
+grid-template-areas: "titulo"
+                     "parrafo"
+                     "barriles" 
+                     "fabrica";
+                     grid-template-columns:100%;
+                     grid-column-gap: 50px;
+                     
+justify-items: center;
+
+.tituloQuienesosmos{
+    grid-area: titulo;
+    text-align: center;
+    background-color: $madera;
+    font-size:$tamanoTitulos; 
+    border-radius: 10px;
+    border-style: solid;
+    color: $marino;
+    animation-name: tituloQuienesosmos;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+
+.parrafoQuienesosmos {
+    width: 100%;
+    grid-area: parrafo;
+    color: $negro;
+    font-size: $tamanoParrafo;
+    text-align: center;
+    animation-name: parrafoQuienesosmos;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+
+.imgBarriles{
+    grid-area: barriles;
+    border-radius: 10px;
+    border-style: solid;
+    color: $madera;
+    animation-name: imagenBarriles;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+}
+
+.imgFabrica{
+    margin-top: 5px;
+    grid-area: fabrica;
+    border-radius: 10px;
+    border-style: solid;
+    color: $madera;
+    animation-name: imagenFabrica;
+    animation-iteration-count:1;
+    animation-duration: 4s;
+}
+
+img{
+    width: 450px;
+    }
+
+    @keyframes tituloQuienesosmos {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
+    @keyframes parrafoQuienesosmos {
+        from {
+         transform:scale(0);
+        }
+        to {
+        transform:scale(1);
+        }
+        }
+    @keyframes imagenBarriles {
+        from {
+        transform:translate(-200px);
+         }
+        to {
+        transform: translate(0);}
+        }
+    @keyframes imagenFabrica {
+        from {
+        transform:translate(-400px);
+        }
+        to {
+        transform: translate(0);}
+        }
+}
+
+//Fin contenido index
+
+/*Fin Contenido index mobile*/
+
+/*Contenido index DESKTOP*/
+
+@media(min-width: 1024px){
+
+section{
+    .banner img{
+        width: 99%;
+        margin-right: 5px;
+        height: 600px;
+        margin-left: 2px;
+        }
+}
+.grid {
+    display: grid;
+grid-template-areas: "titulo    titulo"
+                     "parrafo   parrafo"
+                     "barriles fabrica";
+                     grid-template-columns: 2fr 2fr;
+                     grid-template-rows: 50px 1fr 600px;
+                     grid-column-gap: 10px;
+                     grid-row-gap: 15px;
+                     margin-bottom: 200px;
+                    justify-items: center; 
+    .tituloQuienesosmos{
+    grid-area: titulo;
+    width: 50%;
+    text-align: center;
+    background-color: $madera;
+    font-size: $tamanoTitulos; 
+    border-radius: 10px;
+    border-style: solid;
+    color: $marino;
+                    }
+    .parrafoQuienesosmos {
+    grid-area: parrafo;
+    font-size: $tamanoParrafo;
+    text-align: center;
+                    }
+    .imgBarriles{
+        grid-area: barriles;
+        border-radius: 10px;
+        border-style: solid;
+        color: $madera;
+        animation-name: imagenBarriles;
+        animation-iteration-count:1;
+        animation-duration: 3s;
+    }
+    .imgFabrica{
+        grid-area: fabrica;
+        border-radius: 10px;
+        border-style: solid;
+        color: $madera;
+        animation-name: imagenFabrica;
+        animation-iteration-count:1;
+        animation-duration: 3s;
+    }
+    @keyframes imagenBarriles {
+        from {
+            transform:translate(-200px);
+        }
+        to {
+            transform: translate(0);}
+            
+        }
+        @keyframes imagenFabrica {
+            from {
+                transform:translate(100px);
+            }
+            to {
+                transform: translate(0);}
+            }
+}
+
+}
+/*FIN Contenido index DESKTOP*/
+   
+    

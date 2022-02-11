@@ -1,0 +1,17 @@
+
+/*ESTILOS GENERALES*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Luxurious Roman', cursive;
+    background-image: url(../img/fondo.jpg);
+}
+
+// Imports
+@import "partials/header";
+@import "partials/footer";
+@import "partials/index";
+
+

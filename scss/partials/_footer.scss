@@ -1,0 +1,138 @@
+@import "../partials/colores";
+@import "../partials/tipografia";
+
+/*Footer general*/
+
+footer{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        margin-left: 15px;
+        
+    section{
+        .logoPie{
+            margin-top: 5px;
+            border-radius: 10px;
+            border-style: solid;
+            color: $marino;
+        } 
+    }
+    .footer1{
+        & h2{
+            margin-top: 15px;
+            color: $marino;
+            font-size: $tamanoTitulos;
+        
+         }
+         & a{
+            font-size: $tamanoParrafo;
+            color: $negro;
+            .RD{
+                width:100px;
+                margin-left: 10px;
+                animation-name: RD;
+                animation-iteration-count:infinite;
+                animation-duration: 5s;
+            }
+         }
+        
+    }
+    .itemsFooter{
+        margin: 15px;
+        h2{
+            margin-top: 15px;
+            color: $marino;
+            font-size: $tamanoTitulos;
+        
+         }
+         ul{
+             li{
+            font-size: $tamanoParrafo;
+            color: $negro;}
+             }
+    }
+    @keyframes RD {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
+    
+}
+.derechos{
+    padding-bottom: 1px;
+    width: 100%;
+    font-size: $tamanoParrafo;
+    color: $madera;
+    text-align: center;
+    background-color:black;
+}
+
+/*Fin Footer general*/
+
+/*footer desktop*/
+@media(min-width: 1024px){
+footer{
+    width: 98%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    section{
+        .logoPie{
+            width: 200px;
+            float: left;
+            margin-left: 5px;
+        }
+    }
+    }
+    .footer1{
+        width:100%;
+        padding-top:15px;
+        margin-left: 10px;
+        h2{
+            margin-top: 15px;
+            color: $marino;
+            font-size: $tamanoTitulos;
+            text-align: center;
+         }
+         ul{
+             li{
+            font-size: $tamanoParrafo;
+            color: $negro;}
+             }
+        .RD{
+            width: 60px;
+        }
+    }
+    .itemsFooter{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center; 
+        text-align: center;
+        h2{
+            margin-top: 15px;
+            color: $marino;
+            font-size: $tamanoTitulos;
+        
+         }
+        ul{
+            margin-top: 10px;
+            color: $negro;
+            font-size: $tamanoParrafo;
+            li{
+               color:$negro; 
+            }
+
+        
+         }
+    }
+}
+/*Fin footer desktop*/
+
+
+    
+   

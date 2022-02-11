@@ -1,0 +1,106 @@
+
+@import "../partials/colores";
+@import "../partials/tipografia";
+
+//encabezado
+
+/*menu de navegacion general*/
+header{
+    
+    .logoInicio{
+        width: 250px;
+        float: left;
+        margin-top: 50px;
+        border-radius: 10px;
+        margin-left: 15px;
+        border-style: solid;
+        color: $marino;
+        animation-name: logoInicio ;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+    }
+
+    .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:flex-end;
+        width: 100%;
+        padding-top: 15px;
+        margin-bottom: 18px;
+        animation-name: menu;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+            .itemsMenu{
+                background-color:$madera;
+                border-radius: 100px;
+                padding: 5px;
+                font-size:$tamanoMenu;
+                margin-bottom: 20px;
+                margin-right: 18px;
+                a{
+                    text-decoration: none;
+                    color: $marino;
+                }
+                &:hover{
+                    color: blue;
+                }
+                
+            }
+    }
+        @keyframes logoInicio {
+        from {
+            transform:translate(-200px);
+        }
+        to {
+            transform: translate(0);}
+        }
+
+        @keyframes menu {
+            from {
+                transform:translate(-200px);
+            }
+            to {
+                transform: translate(0);}
+            }
+  
+}
+/*Fin menu de navegacion general*/
+/*Contenido navegacion DESKTOP*/
+
+@media(min-width: 1024px){
+    header{
+        .logoInicio{
+            transition: padding 1s;
+            &:hover{
+                padding:5px;
+                background-color:$madera;
+                }
+    }
+    .menu{
+        justify-content:flex-end;
+        animation-name: menu;
+        animation-iteration-count:1;
+        animation-duration: 1s;
+        .itemsMenu{
+            width: 500px;
+            padding: 15px;
+            border-radius: 10px;
+            transition: padding 1s;
+            &:hover{
+                padding:10px;
+                border-radius: 80px 20px; 
+                }
+        }
+    }
+        
+}
+@keyframes menu {
+    from {
+        transform:translate(100px);
+    }
+    to {
+        transform: translate(0);
+    }
+    }
+}
+/*Fin Contenido navegacion DESKTOP*/
