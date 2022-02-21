@@ -3,3 +3,23 @@
 $madera: rgb(238, 208, 157);
 $marino:rgb(39, 40, 80);
 $negro:black;
+
+
+@mixin tamano ($alto, $ancho ){
+    width: $ancho;
+    height: $alto;
+    
+}
+$paleta:(
+    "madera":rgb(238, 208, 157),
+    "marino":rgb(39, 40, 80),
+    "negro": red,
+    "ceniza": rgb(205, 205,205)
+);
+@each $clave, $valor in $paleta {
+    .pedirAhora-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+

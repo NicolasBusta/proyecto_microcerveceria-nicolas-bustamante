@@ -7,6 +7,18 @@ body {
   font-family: 'Luxurious Roman', cursive;
   background-image: url(../img/fondo.jpg); }
 
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
 /*menu de navegacion general*/
 header .logoInicio {
   width: 250px;
@@ -83,6 +95,18 @@ header .menu {
       transform: translate(0); } } }
 
 /*Fin Contenido navegacion DESKTOP*/
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
 /*Footer general*/
 footer {
   width: 100%;
@@ -97,7 +121,7 @@ footer {
     color: #272850; }
   footer .footer1 h2 {
     margin-top: 15px;
-    color: #272850;
+    color: #cdcdcd;
     font-size: 30px; }
   footer .footer1 a {
     font-size: 18px;
@@ -112,7 +136,7 @@ footer {
     margin: 15px; }
     footer .itemsFooter h2 {
       margin-top: 15px;
-      color: #272850;
+      color: #cdcdcd;
       font-size: 30px; }
     footer .itemsFooter ul li {
       font-size: 18px;
@@ -136,7 +160,7 @@ footer {
 /*footer desktop*/
 @media (min-width: 1024px) {
   footer {
-    width: 98%;
+    width: 100%;
     display: flex;
     flex-flow: row;
     align-items: center; }
@@ -148,6 +172,11 @@ footer {
     width: 100%;
     padding-top: 15px;
     margin-left: 10px; }
+    .footer1 .ti1, .footer1 .RD {
+      font-size: 45px;
+      background-color: #272850;
+      border-style: solid;
+      border-color: black; }
     .footer1 h2 {
       margin-top: 15px;
       color: #272850;
@@ -157,7 +186,9 @@ footer {
       font-size: 18px;
       color: black; }
     .footer1 .RD {
-      width: 60px; }
+      background-color: #272850;
+      width: 60px;
+      height: 60px; }
   .itemsFooter {
     width: 100%;
     display: flex;
@@ -176,6 +207,18 @@ footer {
         color: black; } }
 
 /*Fin footer desktop*/
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
 /*Contenido index mobile*/
 section .banner img {
   width: 100%;
@@ -323,3 +366,14 @@ section .banner img {
       transform: translate(0); } } }
 
 /*FIN Contenido index DESKTOP*/
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
