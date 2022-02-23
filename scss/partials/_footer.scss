@@ -22,7 +22,7 @@ footer{
         
         & h2{
             margin-top: 15px;
-            color:map-get($paleta, ceniza);;
+            color:map-get($paleta, marino);;
             font-size: $tamanoTitulos;
         
          }
@@ -43,7 +43,7 @@ footer{
         margin: 15px;
         h2{
             margin-top: 15px;
-            color: map-get($paleta, ceniza);
+            color: map-get($paleta, marino);
             font-size: $tamanoTitulos;
         
          }
@@ -69,7 +69,7 @@ footer{
     font-size: $tamanoParrafo;
     color: $madera;
     text-align: center;
-    background-color:black;
+    background-color:$negro;
 }
 
 /*Fin Footer general*/
@@ -94,10 +94,8 @@ footer{
         padding-top:15px;
         margin-left: 10px;
         .ti1{
-            font-size: 45px;
-            background-color: $marino;
-            border-style:solid;
-            border-color: $negro;
+        font-size: $tamanoTitulos;
+           
         }
         
         h2{
@@ -111,12 +109,6 @@ footer{
             font-size: $tamanoParrafo;
             color: $negro;}
              }
-        .RD{
-            @extend.ti1;
-            background-color: $marino;
-            @include tamano (60px, 60px)
-
-        }
         
     }
     .itemsFooter{

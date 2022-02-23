@@ -121,7 +121,7 @@ footer {
     color: #272850; }
   footer .footer1 h2 {
     margin-top: 15px;
-    color: #cdcdcd;
+    color: #272850;
     font-size: 30px; }
   footer .footer1 a {
     font-size: 18px;
@@ -136,7 +136,7 @@ footer {
     margin: 15px; }
     footer .itemsFooter h2 {
       margin-top: 15px;
-      color: #cdcdcd;
+      color: #272850;
       font-size: 30px; }
     footer .itemsFooter ul li {
       font-size: 18px;
@@ -172,11 +172,8 @@ footer {
     width: 100%;
     padding-top: 15px;
     margin-left: 10px; }
-    .footer1 .ti1, .footer1 .RD {
-      font-size: 45px;
-      background-color: #272850;
-      border-style: solid;
-      border-color: black; }
+    .footer1 .ti1 {
+      font-size: 30px; }
     .footer1 h2 {
       margin-top: 15px;
       color: #272850;
@@ -185,10 +182,6 @@ footer {
     .footer1 ul li {
       font-size: 18px;
       color: black; }
-    .footer1 .RD {
-      background-color: #272850;
-      width: 60px;
-      height: 60px; }
   .itemsFooter {
     width: 100%;
     display: flex;
@@ -219,7 +212,7 @@ footer {
 .pedirAhora-ceniza {
   background-color: #cdcdcd; }
 
-/*Contenido index mobile*/
+/* estilos paguina cervezas mobile*/
 section .banner img {
   width: 100%;
   height: 300px;
@@ -377,3 +370,460 @@ section .banner img {
 
 .pedirAhora-ceniza {
   background-color: #cdcdcd; }
+
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
+/*Contenido nosotros mobile*/
+section .sobreNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: sobreNosotros;
+  animation-iteration-count: 1;
+  animation-duration: 2s; }
+  section .sobreNosotros h2 {
+    background-color: #eed09d;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #272850;
+    margin-bottom: 15px; }
+  section .sobreNosotros img {
+    width: 80%;
+    height: 350px;
+    border-radius: 10px;
+    border-style: solid;
+    color: wheat; }
+  section .sobreNosotros p {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    color: black;
+    text-align: center; }
+
+@keyframes sobreNosotros {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+article .trabajadores {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  animation-name: trabajadores;
+  animation-iteration-count: 1;
+  animation-duration: 3s; }
+  article .trabajadores .trabajador {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #eed09d; }
+
+article .parrafoNosotros {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  animation-name: parrafoNosotros;
+  animation-iteration-count: 1;
+  animation-duration: 3s; }
+
+@keyframes trabajadores {
+  from {
+    transform: translate(-100px); }
+  to {
+    transform: translate(0); } }
+
+@keyframes parrafoNosotros {
+  from {
+    transform: translate(-100px); }
+  to {
+    transform: translate(0); } }
+
+/*Fin Contenido nosotros mobile*/
+/*Contenido nosotros DESKTOP*/
+@media (min-width: 1024px) {
+  section p {
+    font-size: 18px;
+    width: 70%;
+    margin-right: 50px; }
+  article .trabajadores {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%; }
+    article .trabajadores .trabajador {
+      width: 100%;
+      margin-right: 10px; }
+  article .parrafoNosotros p {
+    font-size: 18px;
+    width: 100%; } }
+
+/* fin estilos de la paguina nosotros desptok*/
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
+/* estilos paguina cervezas mobile*/
+section .cervezas {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 15px; }
+  section .cervezas h2 {
+    font-size: 30px;
+    background-color: #eed09d;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #272850;
+    animation-name: tituloCervezas;
+    animation-iteration-count: 1;
+    animation-duration: 1s; }
+  section .cervezas img {
+    width: 80%;
+    border-radius: 10px;
+    border-style: solid;
+    color: #eed09d;
+    animation-name: cervezasImg;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
+
+@keyframes tituloCervezas {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes cervezasImg {
+  from {
+    transform: translate(-500px); }
+  to {
+    transform: translate(0); } }
+
+.gridCervezas {
+  display: grid;
+  grid-template-areas: "tipo1" "nombre1" "cerve1" "nombre4" "cerve4" "nombre7" "cerve7" "tipo2" "nombre2"  "cerve2" "nombre5" "cerve5" "nombre8" "cerve8" "tipo3" "nombre3" "cerve3" "nombre6"  "cerve6" "nombre9" "cerve9";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  /*titulogrid*/
+  /*fin titulogrid*/
+  /*tipos de cerveza 1 fila*/
+  /*tipos de cerveza 2 fila*/
+  /*tipos de cerveza 3 fila*/ }
+  .gridCervezas img {
+    width: 100%;
+    height: 200px;
+    background-color: #eed09d;
+    border-radius: 10px;
+    border-style: solid;
+    animation-name: imagenesBirras;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
+  .gridCervezas h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    animation-name: tituloCervezas;
+    animation-iteration-count: 1;
+    animation-duration: 1s; }
+  .gridCervezas h3 {
+    color: #272850;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+    background-color: #eed09d;
+    border-radius: 10px;
+    border-style: solid;
+    animation-name: tituloBirras;
+    animation-iteration-count: 1;
+    animation-duration: 3s; }
+  .gridCervezas .tituloRubias {
+    grid-area: tipo1;
+    padding-top: 50px; }
+  .gridCervezas .tituloRojas {
+    grid-area: tipo2;
+    padding-top: 50px; }
+  .gridCervezas .tituloNegras {
+    grid-area: tipo3;
+    padding-top: 50px; }
+  .gridCervezas .nombreGolden {
+    grid-area: nombre1; }
+  .gridCervezas .cervezaGolden {
+    grid-area: cerve1; }
+  .gridCervezas .nombreAmber {
+    grid-area: nombre2; }
+  .gridCervezas .cervezaAmber {
+    grid-area: cerve2; }
+  .gridCervezas .nombreStout {
+    grid-area: nombre3; }
+  .gridCervezas .cervezaStout {
+    grid-area: cerve3; }
+  .gridCervezas .nombreBlond {
+    grid-area: nombre4; }
+  .gridCervezas .cervezaBlond {
+    grid-area: cerve4; }
+  .gridCervezas .nombreEnglishBrown {
+    grid-area: nombre5; }
+  .gridCervezas .cervezaEnglishBrown {
+    grid-area: cerve5; }
+  .gridCervezas .nombrePorter {
+    grid-area: nombre6; }
+  .gridCervezas .cervezaPorter {
+    grid-area: cerve6; }
+  .gridCervezas .nombrePilsner {
+    grid-area: nombre7; }
+  .gridCervezas .cervezaPilsner {
+    grid-area: cerve7; }
+  .gridCervezas .nombreScotch {
+    grid-area: nombre8; }
+  .gridCervezas .cervezaScotch {
+    grid-area: cerve8; }
+  .gridCervezas .nombreBock {
+    grid-area: nombre9; }
+  .gridCervezas .cervezaBock {
+    grid-area: cerve9; }
+
+@keyframes imagenesBirras {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes tituloCervezas {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes tituloBirras {
+  from {
+    transform: translate(-100px); }
+  to {
+    transform: translate(0); } }
+
+section .pedirAhora {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #eed09d;
+  border-radius: 10px;
+  border-style: solid;
+  color: #eed09d;
+  transition: heigth 1s, content 1s; }
+  section .pedirAhora a {
+    font-size: 30px;
+    color: #272850;
+    padding-left: 5%; }
+  section .pedirAhora :hover {
+    text-decoration: underline;
+    color: yellow; }
+
+/* FIN estilos paguina cervezas mobile*/
+/* estilos paguina cervezas desptok*/
+@media (min-width: 1024px) {
+  .gridCervezas {
+    display: grid;
+    grid-template-areas: " tipo1 tipo2 tipo3" "nombre1 nombre2 nombre3" "cerve1 cerve2 cerve3" "nombre4 nombre5 nombre6"  "cerve4 cerve5 cerve6" "nombre7 nombre8 nombre9" "cerve7 cerve8 cerve9";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center; }
+    .gridCervezas h3 {
+      font-size: 30px; }
+  .cervezaGolden {
+    transition: width 1s; }
+  .cervezaGolden:hover {
+    width: 90%; }
+  .cervezaBlond {
+    transition: width 1s; }
+  .cervezaBlond:hover {
+    width: 90%; }
+  .cervezaPilsner {
+    transition: width 1s; }
+  .cervezaPilsner:hover {
+    width: 90%; }
+  .cervezaAmber {
+    transition: width 1s; }
+  .cervezaAmber:hover {
+    width: 90%; }
+  .cervezaEnglishBrown {
+    transition: width 1s; }
+  .cervezaEnglishBrown:hover {
+    width: 90%; }
+  .cervezaScotch {
+    transition: width 1s; }
+  .cervezaScotch:hover {
+    width: 90%; }
+  .cervezaStout {
+    transition: width 1s; }
+  .cervezaStout:hover {
+    width: 90%; }
+  .cervezaPorter {
+    transition: width 1s; }
+  .cervezaPorter:hover {
+    width: 90%; }
+  .cervezaBock {
+    transition: width 1s; }
+  .cervezaBock:hover {
+    width: 90%; }
+  /* fin transition*/
+  .pedirAhora {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 20px;
+    width: 500px;
+    height: 50px;
+    margin-left: 30%;
+    background-color: #eed09d;
+    border-radius: 10px;
+    border-style: solid;
+    color: #eed09d; } }
+
+/* fin estilos paguina cervezas desptok*/
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
+/* estilos paguina bares mobile*/
+.nuestrosBares {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 15px; }
+  .nuestrosBares h2 {
+    font-size: 30px;
+    background-color: #eed09d;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #272850; }
+
+section .contenedorBares h2 {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  background-color: #eed09d;
+  border-radius: 5px;
+  border-style: solid;
+  color: #272850;
+  margin-top: 15px;
+  margin-right: 15px; }
+
+section .contenedorBares p {
+  font-size: 18px;
+  color: black; }
+
+section .contenedorBares img {
+  animation-name: inicioBar;
+  animation-iteration-count: 1;
+  animation-duration: 2s; }
+
+@keyframes inicioBar {
+  from {
+    transform: translate(-100px); }
+  to {
+    transform: translate(0); } }
+
+/*FIN de estilos paguina bares mobile*/
+.pedirAhora-madera {
+  background-color: #eed09d; }
+
+.pedirAhora-marino {
+  background-color: #272850; }
+
+.pedirAhora-negro {
+  background-color: red; }
+
+.pedirAhora-ceniza {
+  background-color: #cdcdcd; }
+
+/* estilos paguina contactos mobile*/
+.consulta {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 15px; }
+  .consulta h2 {
+    font-size: 30px;
+    background-color: #eed09d;
+    border-radius: 5px;
+    border-style: solid;
+    color: #272850;
+    margin-bottom: 15px;
+    animation-name: tituloConsulta;
+    animation-iteration-count: 1;
+    animation-duration: 4s; }
+
+@keyframes tituloConsulta {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.formulario {
+  animation-name: formulario;
+  animation-iteration-count: 1;
+  animation-duration: 2s; }
+  .formulario .form-label {
+    font-size: 18px;
+    color: black; }
+
+@keyframes formulario {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.btn {
+  background-color: #272850; }
+
+/* fin estilos paguina contactos mobile*/
+/* estilos paguina contactos desptok*/
+@media (min-width: 1024px) {
+  .formulario {
+    width: 50%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #eed09d; } }

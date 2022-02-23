@@ -1,0 +1,328 @@
+@import "../partials/colores";
+@import "../partials/tipografia";
+
+/* estilos paguina cervezas mobile*/
+
+section{
+    .cervezas{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 15px;
+    & h2{
+    font-size: $tamanoTitulos;
+    background-color: $madera;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    color: $marino;
+    animation-name: tituloCervezas;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    }
+    & img{
+    width: 80%;
+    border-radius: 10px;
+    border-style: solid;
+    color: $madera;
+    animation-name:cervezasImg;
+    animation-iteration-count:1;
+    animation-duration: 2s;
+    }
+    }
+    @keyframes tituloCervezas {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
+    @keyframes cervezasImg {
+        from {
+            transform:translate(-500px);
+            }
+        to {
+            transform: translate(0);}
+            }
+}
+//grids cervezas:
+
+.gridCervezas{
+    display: grid;
+    grid-template-areas: "tipo1"
+                        "nombre1"
+                        "cerve1"
+                        "nombre4"
+                        "cerve4"
+                        "nombre7"
+                        "cerve7"
+                        "tipo2"
+                        "nombre2" 
+                        "cerve2"
+                        "nombre5"
+                        "cerve5"
+                        "nombre8"
+                        "cerve8"
+                        "tipo3"
+                        "nombre3"
+                        "cerve3"
+                        "nombre6" 
+                        "cerve6"
+                        "nombre9"
+                        "cerve9";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    grid-column-gap: 10px;
+                    grid-row-gap: 10px;
+                    justify-items: center;
+                    align-items: center;
+    & img{
+    width: 100%;
+    height: 200px;
+    background-color: $madera;
+    border-radius: 10px;
+    border-style: solid;
+    animation-name: imagenesBirras;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    }
+    & h2{
+    color: $negro;
+    font-size: $tamanoTitulos;
+    text-align: center;
+    animation-name: tituloCervezas;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    }
+    & h3{
+    color:$marino ;
+    width: 100%;
+    height: 100%;
+    font-size: $tamanoParrafo;
+    text-align: center;
+    background-color: $madera;
+    border-radius: 10px;
+    border-style: solid;
+    animation-name:tituloBirras;
+    animation-iteration-count:1;
+    animation-duration: 3s;
+    }
+    /*titulogrid*/
+    .tituloRubias{
+    grid-area: tipo1;
+    padding-top: 50px;
+    
+}
+    .tituloRojas{
+        grid-area: tipo2;
+        padding-top: 50px;
+    }
+    .tituloNegras{
+        grid-area: tipo3;
+        padding-top: 50px;
+    }
+    /*fin titulogrid*/
+    /*tipos de cerveza 1 fila*/
+    .nombreGolden{
+        grid-area: nombre1;
+    }
+    .cervezaGolden{
+        grid-area: cerve1;
+    }
+    .nombreAmber{
+        grid-area: nombre2;
+    }
+    .cervezaAmber{
+        grid-area: cerve2;
+    }
+    .nombreStout{
+        grid-area: nombre3;
+    }
+    .cervezaStout{
+        grid-area: cerve3;
+    }
+    /*tipos de cerveza 2 fila*/
+    .nombreBlond{
+        grid-area: nombre4;
+    }
+    .cervezaBlond{
+        grid-area: cerve4;
+    }
+    .nombreEnglishBrown{
+        grid-area: nombre5;
+    }
+    .cervezaEnglishBrown{
+        grid-area: cerve5;
+    }
+    .nombrePorter{
+        grid-area: nombre6;
+    }
+    .cervezaPorter{
+        grid-area: cerve6;
+    }
+    /*tipos de cerveza 3 fila*/
+    .nombrePilsner{
+        grid-area: nombre7;
+    }
+    .cervezaPilsner{
+    grid-area: cerve7;
+    }
+    .nombreScotch{
+        grid-area: nombre8;
+    }
+    .cervezaScotch{
+        grid-area: cerve8;
+    }
+    .nombreBock{
+        grid-area: nombre9;
+    }
+    .cervezaBock{
+        grid-area: cerve9;
+    }
+
+    @keyframes imagenesBirras {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
+        @keyframes tituloCervezas {
+            from {
+                transform:scale(0);
+            }
+            to {
+                transform:scale(1);
+            }
+            }
+            @keyframes tituloBirras {
+                from {
+                transform:translate(-100px);
+                }
+                to {
+                 transform: translate(0);}
+                 }
+}
+//fin grids
+
+section{
+    .pedirAhora{
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+        margin-top: 20px;
+        height: 50px;
+        background-color:$madera;
+        border-radius: 10px;
+        border-style: solid;
+        color: $madera;
+        transition: heigth 1s, content 1s;
+        & a{
+            font-size:$tamanoTitulos;
+            color:$marino;
+            padding-left: 5%;
+        }
+        & :hover{
+            text-decoration: underline;
+            color: yellow;
+        }
+
+    }
+}
+/* FIN estilos paguina cervezas mobile*/
+/* estilos paguina cervezas desptok*/
+
+@media(min-width: 1024px){
+    .gridCervezas{
+        display: grid;
+        grid-template-areas: " tipo1 tipo2 tipo3"
+                            "nombre1 nombre2 nombre3"
+                            "cerve1 cerve2 cerve3"
+                            "nombre4 nombre5 nombre6" 
+                            "cerve4 cerve5 cerve6"
+                            "nombre7 nombre8 nombre9"
+                            "cerve7 cerve8 cerve9"
+                            ;
+                         grid-template-columns: 1fr 1fr 1fr;
+                         grid-template-rows: auto auto auto;
+                         grid-column-gap: 10px;
+                         grid-row-gap: 10px;
+                        justify-items: center;
+                        align-items: center;
+        & h3{
+        font-size: $tamanoTitulos;  
+        }
+                       
+    }
+    .cervezaGolden{
+        transition: width 1s;
+        }
+    .cervezaGolden:hover{
+        width: 90%;
+        }
+    .cervezaBlond{
+        transition: width 1s;
+        }
+    .cervezaBlond:hover{
+        width: 90%;
+        } 
+    .cervezaPilsner{
+        transition: width 1s;
+        }
+    .cervezaPilsner:hover{
+        width: 90%;
+        }
+    .cervezaAmber{
+        transition: width 1s;
+        }
+    .cervezaAmber:hover{
+        width: 90%;
+        }
+    .cervezaEnglishBrown{
+        transition: width 1s;
+        }
+    .cervezaEnglishBrown:hover{
+        width: 90%;
+         }
+    .cervezaScotch{
+        transition: width 1s;
+         }
+    .cervezaScotch:hover{
+        width: 90%;
+        }
+    .cervezaStout{
+        transition: width 1s;
+        }
+    .cervezaStout:hover{
+        width: 90%;
+        }
+    .cervezaPorter{
+        transition: width 1s;
+        }
+    .cervezaPorter:hover{
+        width: 90%;
+        }
+    .cervezaBock{
+        transition: width 1s;
+        }
+     .cervezaBock:hover{
+        width: 90%;
+            }
+    /* fin transition*/ 
+    .pedirAhora{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 20px;
+        width: 500px;
+        height: 50px;
+        margin-left: 30%;
+        background-color: $madera;
+        border-radius: 10px;
+        border-style: solid;
+        color: $madera;
+    }
+}
+/* fin estilos paguina cervezas desptok*/

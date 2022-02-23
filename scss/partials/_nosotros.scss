@@ -1,0 +1,127 @@
+@import "../partials/colores";
+@import "../partials/tipografia";
+
+
+/*Contenido nosotros mobile*/
+
+section{
+    .sobreNosotros{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        animation-name: sobreNosotros;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+
+        & h2{
+            background-color:$madera;
+            font-size: $tamanoTitulos;
+            border-radius: 10px;
+            border-style: solid;
+            color: $marino;
+            margin-bottom: 15px;
+        }
+        & img{
+            width: 80%;
+            height: 350px;
+            border-radius: 10px;
+            border-style: solid;
+            color: wheat;
+        }
+        & p{
+            margin-top: 15px;
+            padding-bottom: 15px;
+            font-size: $tamanoParrafo;
+            color: $negro;
+            text-align: center;
+        }
+    }
+    @keyframes sobreNosotros {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
+}
+
+//Fin banner y titulo
+//contenido
+
+article{
+    .trabajadores{
+        display: flex;
+        flex-flow:column;
+        width: 100%; 
+        animation-name: trabajadores;
+        animation-iteration-count:1;
+        animation-duration: 3s;
+        .trabajador{
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-style: solid;
+            color: $madera;
+        }   
+    }
+    .parrafoNosotros{
+        width: 100%;
+        padding-top: 10px;
+        font-size: $tamanoParrafo;
+        text-align: center;
+        color: $negro;
+        animation-name:parrafoNosotros;
+        animation-iteration-count:1;
+        animation-duration: 3s;
+    }
+
+    @keyframes trabajadores {
+        from {
+            transform:translate(-100px);
+        }
+        to {
+            transform: translate(0);}
+        }
+    @keyframes parrafoNosotros {
+            from {
+                transform:translate(-100px);
+            }
+            to {
+                transform: translate(0);}
+            }
+}
+/*Fin Contenido nosotros mobile*/
+/*Contenido nosotros DESKTOP*/
+
+@media(min-width: 1024px){
+    section{
+        
+        & p{
+            font-size: $tamanoParrafo;
+            width: 70%;
+            margin-right: 50px;
+        }
+    }
+    article{
+        
+    .trabajadores{
+        display: flex;
+        flex-flow:row wrap;
+        width: 100%; 
+        
+        .trabajador{
+            width:100%;
+            margin-right: 10px;
+        }
+    
+    }
+    .parrafoNosotros{
+        & p{
+            font-size: $tamanoParrafo;
+            width: 100%;
+        }
+    }
+}
+}
+    /* fin estilos de la paguina nosotros desptok*/

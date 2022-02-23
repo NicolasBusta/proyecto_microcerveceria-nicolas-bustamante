@@ -1,0 +1,65 @@
+@import "../partials/colores";
+@import "../partials/tipografia";
+
+/* estilos paguina contactos mobile*/
+.consulta{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+    & h2{
+    font-size: $tamanoTitulos;
+    background-color: $madera;
+    border-radius: 5px;
+    border-style: solid;
+    color: $marino;
+    margin-bottom: 15px;
+    animation-name: tituloConsulta;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    }
+    @keyframes tituloConsulta {
+        from {
+            transform:scale(0);
+        }
+        to {
+            transform:scale(1);
+        }
+        }
+}
+
+.formulario {
+    animation-name: formulario;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    .form-label{
+        font-size: $tamanoParrafo;
+        color: black;
+        }
+        @keyframes formulario {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }          
+}
+}
+
+.btn{
+    background-color: $marino;
+}       
+
+/* fin estilos paguina contactos mobile*/
+
+/* estilos paguina contactos desptok*/
+@media(min-width: 1024px){
+    .formulario{
+        width: 50%;
+        margin-top: 15px;
+        border-radius: 10px;
+        border-style: solid;
+        color: $madera;
+    }
+}
