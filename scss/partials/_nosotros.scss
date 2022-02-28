@@ -29,6 +29,7 @@ section{
             color: wheat;
         }
         & p{
+            background-color: $fondoLegible;
             margin-top: 15px;
             padding-bottom: 15px;
             font-size: $tamanoParrafo;
@@ -67,6 +68,7 @@ article{
     }
     .parrafoNosotros{
         width: 100%;
+        background-color: $fondoLegible;
         padding-top: 10px;
         font-size: $tamanoParrafo;
         text-align: center;

@@ -3,7 +3,7 @@
 $madera: rgb(238, 208, 157);
 $marino:rgb(39, 40, 80);
 $negro:black;
-
+$fondoLegible:rgba(255, 255, 255,0.6);
 
 @mixin tamano ($alto, $ancho ){
     width: $ancho;

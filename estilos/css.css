@@ -113,40 +113,45 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin-left: 15px; }
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px; }
   footer section .logoPie {
     margin-top: 5px;
     border-radius: 10px;
     border-style: solid;
     color: #272850; }
-  footer .footer1 h2 {
+  footer .ti1 {
     margin-top: 15px;
+    padding-left: 15px;
     color: #272850;
-    font-size: 30px; }
-  footer .footer1 a {
-    font-size: 18px;
-    color: black; }
-    footer .footer1 a .RD {
-      width: 100px;
-      margin-left: 10px;
-      animation-name: RD;
-      animation-iteration-count: infinite;
-      animation-duration: 5s; }
+    font-size: 30px;
+    display: flex;
+    align-items: center; }
+  footer .footer1 {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center; }
+    footer .footer1 .ti1 {
+      width: 50%; }
+    footer .footer1 a {
+      font-size: 18px;
+      color: black;
+      flex-flow: row; }
+      footer .footer1 a .RD {
+        width: 40px;
+        margin-left: 10px; }
   footer .itemsFooter {
     margin: 15px; }
     footer .itemsFooter h2 {
+      width: 50%;
       margin-top: 15px;
       color: #272850;
       font-size: 30px; }
     footer .itemsFooter ul li {
       font-size: 18px;
       color: black; }
-
-@keyframes RD {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
 
 .derechos {
   padding-bottom: 1px;
@@ -163,7 +168,9 @@ footer {
     width: 100%;
     display: flex;
     flex-flow: row;
-    align-items: center; }
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px; }
     footer section .logoPie {
       width: 200px;
       float: left;
@@ -188,6 +195,12 @@ footer {
     flex-flow: column;
     align-items: center;
     text-align: center; }
+    .itemsFooter .ti2 {
+      width: 100%;
+      text-align: center; }
+    .itemsFooter .ti3 {
+      width: 100%;
+      text-align: center; }
     .itemsFooter h2 {
       margin-top: 15px;
       color: #272850;
@@ -236,7 +249,8 @@ section .banner img {
   grid-template-areas: "titulo" "parrafo" "barriles"  "fabrica";
   grid-template-columns: 100%;
   grid-column-gap: 50px;
-  justify-items: center; }
+  justify-items: center;
+  margin-bottom: 50px; }
   .grid .tituloQuienesosmos {
     grid-area: titulo;
     text-align: center;
@@ -250,6 +264,7 @@ section .banner img {
     animation-duration: 5s; }
   .grid .parrafoQuienesosmos {
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
     grid-area: parrafo;
     color: black;
     font-size: 18px;
@@ -405,6 +420,7 @@ section .sobreNosotros {
     border-style: solid;
     color: wheat; }
   section .sobreNosotros p {
+    background-color: rgba(255, 255, 255, 0.6);
     margin-top: 15px;
     padding-bottom: 15px;
     font-size: 18px;
@@ -433,6 +449,7 @@ article .trabajadores {
 
 article .parrafoNosotros {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
   padding-top: 10px;
   font-size: 18px;
   text-align: center;
@@ -522,7 +539,7 @@ section .cervezas {
   to {
     transform: translate(0); } }
 
-.gridCervezas {
+.container {
   display: grid;
   grid-template-areas: "tipo1" "nombre1" "cerve1" "nombre4" "cerve4" "nombre7" "cerve7" "tipo2" "nombre2"  "cerve2" "nombre5" "cerve5" "nombre8" "cerve8" "tipo3" "nombre3" "cerve3" "nombre6"  "cerve6" "nombre9" "cerve9";
   grid-template-columns: 1fr;
@@ -536,7 +553,7 @@ section .cervezas {
   /*tipos de cerveza 1 fila*/
   /*tipos de cerveza 2 fila*/
   /*tipos de cerveza 3 fila*/ }
-  .gridCervezas img {
+  .container img {
     width: 100%;
     height: 200px;
     background-color: #eed09d;
@@ -545,14 +562,17 @@ section .cervezas {
     animation-name: imagenesBirras;
     animation-iteration-count: 1;
     animation-duration: 2s; }
-  .gridCervezas h2 {
+  .container h2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
     color: black;
     font-size: 30px;
     text-align: center;
     animation-name: tituloCervezas;
     animation-iteration-count: 1;
     animation-duration: 1s; }
-  .gridCervezas h3 {
+  .container h3 {
     color: #272850;
     width: 100%;
     height: 100%;
@@ -564,50 +584,50 @@ section .cervezas {
     animation-name: tituloBirras;
     animation-iteration-count: 1;
     animation-duration: 3s; }
-  .gridCervezas .tituloRubias {
+  .container .tituloRubias {
     grid-area: tipo1;
     padding-top: 50px; }
-  .gridCervezas .tituloRojas {
+  .container .tituloRojas {
     grid-area: tipo2;
     padding-top: 50px; }
-  .gridCervezas .tituloNegras {
+  .container .tituloNegras {
     grid-area: tipo3;
     padding-top: 50px; }
-  .gridCervezas .nombreGolden {
+  .container .nombreGolden {
     grid-area: nombre1; }
-  .gridCervezas .cervezaGolden {
+  .container .cervezaGolden {
     grid-area: cerve1; }
-  .gridCervezas .nombreAmber {
+  .container .nombreAmber {
     grid-area: nombre2; }
-  .gridCervezas .cervezaAmber {
+  .container .cervezaAmber {
     grid-area: cerve2; }
-  .gridCervezas .nombreStout {
+  .container .nombreStout {
     grid-area: nombre3; }
-  .gridCervezas .cervezaStout {
+  .container .cervezaStout {
     grid-area: cerve3; }
-  .gridCervezas .nombreBlond {
+  .container .nombreBlond {
     grid-area: nombre4; }
-  .gridCervezas .cervezaBlond {
+  .container .cervezaBlond {
     grid-area: cerve4; }
-  .gridCervezas .nombreEnglishBrown {
+  .container .nombreEnglishBrown {
     grid-area: nombre5; }
-  .gridCervezas .cervezaEnglishBrown {
+  .container .cervezaEnglishBrown {
     grid-area: cerve5; }
-  .gridCervezas .nombrePorter {
+  .container .nombrePorter {
     grid-area: nombre6; }
-  .gridCervezas .cervezaPorter {
+  .container .cervezaPorter {
     grid-area: cerve6; }
-  .gridCervezas .nombrePilsner {
+  .container .nombrePilsner {
     grid-area: nombre7; }
-  .gridCervezas .cervezaPilsner {
+  .container .cervezaPilsner {
     grid-area: cerve7; }
-  .gridCervezas .nombreScotch {
+  .container .nombreScotch {
     grid-area: nombre8; }
-  .gridCervezas .cervezaScotch {
+  .container .cervezaScotch {
     grid-area: cerve8; }
-  .gridCervezas .nombreBock {
+  .container .nombreBock {
     grid-area: nombre9; }
-  .gridCervezas .cervezaBock {
+  .container .cervezaBock {
     grid-area: cerve9; }
 
 @keyframes imagenesBirras {
@@ -633,6 +653,7 @@ section .pedirAhora {
   flex-flow: column;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 50px;
   height: 50px;
   background-color: #eed09d;
   border-radius: 10px;
@@ -650,7 +671,7 @@ section .pedirAhora {
 /* FIN estilos paguina cervezas mobile*/
 /* estilos paguina cervezas desptok*/
 @media (min-width: 1024px) {
-  .gridCervezas {
+  .container {
     display: grid;
     grid-template-areas: " tipo1 tipo2 tipo3" "nombre1 nombre2 nombre3" "cerve1 cerve2 cerve3" "nombre4 nombre5 nombre6"  "cerve4 cerve5 cerve6" "nombre7 nombre8 nombre9" "cerve7 cerve8 cerve9";
     grid-template-columns: 1fr 1fr 1fr;
@@ -659,7 +680,7 @@ section .pedirAhora {
     grid-row-gap: 10px;
     justify-items: center;
     align-items: center; }
-    .gridCervezas h3 {
+    .container h3 {
       font-size: 30px; }
   .cervezaGolden {
     transition: width 1s; }
@@ -738,25 +759,25 @@ section .pedirAhora {
     border-style: solid;
     color: #272850; }
 
-section .contenedorBares h2 {
-  width: 100%;
-  font-size: 30px;
-  text-align: center;
-  background-color: #eed09d;
-  border-radius: 5px;
-  border-style: solid;
-  color: #272850;
-  margin-top: 15px;
-  margin-right: 15px; }
-
-section .contenedorBares p {
-  font-size: 18px;
-  color: black; }
-
-section .contenedorBares img {
-  animation-name: inicioBar;
-  animation-iteration-count: 1;
-  animation-duration: 2s; }
+section .contenedorBares {
+  background-color: rgba(255, 255, 255, 0.6); }
+  section .contenedorBares h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    background-color: #eed09d;
+    border-radius: 5px;
+    border-style: solid;
+    color: #272850;
+    margin-top: 15px;
+    margin-right: 15px; }
+  section .contenedorBares p {
+    font-size: 18px;
+    color: black; }
+  section .contenedorBares img {
+    animation-name: inicioBar;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
 
 @keyframes inicioBar {
   from {

@@ -49,7 +49,7 @@ section{
 }
 //grids cervezas:
 
-.gridCervezas{
+.container{
     display: grid;
     grid-template-areas: "tipo1"
                         "nombre1"
@@ -89,6 +89,9 @@ section{
     animation-duration: 2s;
     }
     & h2{
+    width: 100%;
+    background-color:$fondoLegible;
+    padding: 20px;
     color: $negro;
     font-size: $tamanoTitulos;
     text-align: center;
@@ -214,6 +217,7 @@ section{
         flex-flow:column;
         align-items: center;
         margin-top: 20px;
+        margin-bottom: 50px;
         height: 50px;
         background-color:$madera;
         border-radius: 10px;
@@ -236,7 +240,7 @@ section{
 /* estilos paguina cervezas desptok*/
 
 @media(min-width: 1024px){
-    .gridCervezas{
+    .container{
         display: grid;
         grid-template-areas: " tipo1 tipo2 tipo3"
                             "nombre1 nombre2 nombre3"

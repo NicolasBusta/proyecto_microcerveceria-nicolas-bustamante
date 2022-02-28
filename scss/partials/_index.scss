@@ -42,6 +42,7 @@ grid-template-areas: "titulo"
                      grid-column-gap: 50px;
                      
 justify-items: center;
+margin-bottom: 50px;
 
 .tituloQuienesosmos{
     grid-area: titulo;
@@ -58,6 +59,7 @@ justify-items: center;
 
 .parrafoQuienesosmos {
     width: 100%;
+    background-color: $fondoLegible;
     grid-area: parrafo;
     color: $negro;
     font-size: $tamanoParrafo;
